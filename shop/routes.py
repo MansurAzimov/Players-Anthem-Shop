@@ -25,3 +25,7 @@ def checkout():
 @app.route('/products')
 def products():
     return render_template ('products.html')
+
+@app.route('/single')
+def single():
+    return render_template ('single.html')
