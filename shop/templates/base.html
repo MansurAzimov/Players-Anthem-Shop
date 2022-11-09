@@ -35,10 +35,10 @@
                     <a href="{{ url_for ('index') }}">Player's Anthem</a>
                 </div>
                 <div class="login-bars">
-                    <a class="btn btn-default log-bar" href="register.html" role="button">Sign up</a>
-                    <a class="btn btn-default log-bar" href="signup.html" role="button">Login</a>
+                    <a class="btn btn-default log-bar" href="{{ url_for ('register')}}" role="button">Регистрация</a>
+                    <a class="btn btn-default log-bar" href="{{ url_for ('signup')}}" role="button">Войти</a>
                     <div class="cart box_1">
-                        <a href="checkout.html">
+                        <a href="{{ url_for ('checkout')}}">
                             <h3>
                                 <div class="total">
                                     <span class="simpleCart_total"></span>(<span id="simpleCart_quantity"
@@ -46,7 +46,7 @@
                                 </div>
                             </h3>
                         </a>
-                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                        <p><a href="javascript:;" class="simpleCart_empty">Корзина</a></p>
                         <div class="clearfix"> </div>
                     </div>
                 </div>
@@ -71,32 +71,32 @@
                         <div class="collapse navbar-collapse collapse-pdng" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav nav-font">
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop<b
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Каталог<b
                                             class="caret"></b></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="products.html">Shoes</a></li>
-                                        <li><a href="products.html">Tees</a></li>
-                                        <li><a href="products.html">Tops</a></li>
+                                        <li><a href="{{ url_for ('products')}}">Кроссовки</a></li>
+                                        <li><a href="{{ url_for ('products')}}">Кеды</a></li>
+                                        <li><a href="{{ url_for ('products')}}">Одежда</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="products.html">Tracks</a></li>
+                                        <li><a href="{{ url_for ('products')}}">Аксессуары</a></li>
                                         <li class="divider"></li>
-                                        <li><a href="products.html">Gear</a></li>
+                                        <li><a href="{{ url_for ('products')}}">Бренды</a></li>
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Men<b
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Мужчинам<b
                                             class="caret"></b></a>
                                     <ul class="dropdown-menu multi-column columns-3">
                                         <div class="row">
                                             <div class="col-sm-4 menu-img-pad">
                                                 <ul class="multi-column-dropdown">
-                                                    <li><a href="products.html">Joggers</a></li>
-                                                    <li><a href="products.html">Foot Ball</a></li>
-                                                    <li><a href="products.html">Cricket</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Одежда</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Баскетбол</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Футбол</a></li>
                                                     <li class="divider"></li>
-                                                    <li><a href="products.html">Tennis</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Скейтбординг</a></li>
                                                     <li class="divider"></li>
-                                                    <li><a href="products.html">Casual</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Casual</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-4 menu-img-pad">
@@ -111,19 +111,19 @@
                                     </ul>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<b
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Женщинам<b
                                             class="caret"></b></a>
                                     <ul class="dropdown-menu multi-column columns-2">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <ul class="multi-column-dropdown">
-                                                    <li><a href="products.html">Tops</a></li>
-                                                    <li><a href="products.html">Bottoms</a></li>
-                                                    <li><a href="products.html">Yoga Pants</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Одежда</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Кроссовки</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Аксессуары</a></li>
                                                     <li class="divider"></li>
-                                                    <li><a href="products.html">Sports</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Спорт</a></li>
                                                     <li class="divider"></li>
-                                                    <li><a href="products.html">Gym</a></li>
+                                                    <li><a href="{{ url_for ('products')}}">Фитнес</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-sm-6">
@@ -131,19 +131,6 @@
                                                         class="img-rsponsive men-img-wid" /></a>
                                             </div>
                                         </div>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">kids<b
-                                            class="caret"></b></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="products.html">Tees</a></li>
-                                        <li><a href="products.html">Shorts</a></li>
-                                        <li><a href="products.html">Gear</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="products.html">Watches</a></li>
-                                        <li class="divider"></li>
-                                        <li><a href="products.html">Shoes</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="{{ url_for ('contact')}}">Contact</a></li>
@@ -167,29 +154,26 @@
     <div class="footer-grid">
         <div class="container">
             <div class="col-md-2 re-ft-grd">
-                <h3>Categories</h3>
+                <h3>категории</h3>
                 <ul class="categories">
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">Formal</a></li>
-                    <li><a href="#">Casuals</a></li>
-                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Мужчинам</a></li>
+                    <li><a href="#">Женщинам</a></li>
+                    <li><a href="#">Кроссовки</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Спорт</a></li>
                 </ul>
             </div>
             <div class="col-md-2 re-ft-grd">
-                <h3>Short links</h3>
+                <h3>Навигация</h3>
                 <ul class="shot-links">
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Delivery</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Terms & conditions</a></li>
-                    <li><a href="contact.html">Sitemap</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="contact.html">Карта сайта</a></li>
                 </ul>
             </div>
             <div class="col-md-6 re-ft-grd">
-                <h3>Social</h3>
+                <h3>Социальные сети</h3>
                 <ul class="social">
                     <li><a href="#" class="fb">facebook</a></li>
                     <li><a href="#" class="twt">twitter</a></li>
