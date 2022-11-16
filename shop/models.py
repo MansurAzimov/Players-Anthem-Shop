@@ -4,9 +4,12 @@ from shop import db
 class Product(db.Model):
     __tablename__='products'
     id = db.Column(db.Integer(),primary_key=True)
-    title = 
-    price
-    category
-    size
-    description
-    image
+    title = db.Column(db.String(),nullable=False)
+    price = db.Column (db.Integer(),primary_key=False)
+    category = db.Column (db.String(),nullable=False)
+    size = db.Column (db.Integer,nullable=False)
+    description = db.Column(db.text(),nullable=False)
+    image = db.Column (db.String(),nullable=False)
+
+    def __repr__(self) -> str:
+        return self.title
